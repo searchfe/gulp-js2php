@@ -61,7 +61,8 @@ export function getUnescapePhp(param: any) {
     }
   
     if (file.isBuffer()) {
-      const unescape = `${param.path}/unescape.php`;
+      let path = param.path || './';
+      const unescape = `${path}/unescape.php`;
       isFileExisted(unescape).catch(() => {
         createFolder(unescape);
         const unescapeContents = `<?php

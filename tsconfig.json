@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module":"CommonJS",
+    "sourceMap": true,
+    "outDir": "dist",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": false,
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "all": true,
+  "exclude": [ "node_modules", "dist", "e2e" ]
+}
